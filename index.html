@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AequiOS - Even in Architecture, Design, and Spirit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Aequi<span class="highlight">OS</span></h1>
+            <nav class="nav-menu">
+                <a href="#overview">Overview</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#features">Features</a>
+                <a href="#getting-started">Getting Started</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="overview" class="hero">
+            <div class="container">
+                <h2>AequiOS</h2>
+                <p class="tagline">Even in Architecture, Design, and Spirit</p>
+                <p class="subtitle">A minimalist, balanced operating system built from the ground up with clarity, correctness, and calm design.</p>
+                <div class="cta-buttons">
+                    <a href="#getting-started" class="btn btn-primary">Get Started</a>
+                    <a href="#download" class="btn btn-secondary">Download</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="philosophy">
+            <div class="container">
+                <h2>Philosophy</h2>
+                <p>Aequi (Latin for "even" or "balanced") represents our commitment to equilibrium in every layer of the operating system.</p>
+                <div class="principles">
+                    <div class="principle">
+                        <h3>Clarity</h3>
+                        <p>Every component is understandable and well-documented. Code speaks for itself.</p>
+                    </div>
+                    <div class="principle">
+                        <h3>Correctness</h3>
+                        <p>Deterministic behavior and safety at all levels. Predictable, reliable systems.</p>
+                    </div>
+                    <div class="principle">
+                        <h3>Minimalism</h3>
+                        <p>Only what is necessary, nothing more. Less than 50 system calls. Readable codebase.</p>
+                    </div>
+                    <div class="principle">
+                        <h3>Balance</h3>
+                        <p>Equilibrium between simplicity and functionality. Architecture, design, and spirit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture" class="architecture">
+            <div class="container">
+                <h2>Architecture</h2>
+                <p>AequiOS is structured in layers, from hardware to userspace.</p>
+                
+                <h3>Core Components</h3>
+                <div class="components-grid">
+                    <div class="component">
+                        <h4>Initium (Bootloader)</h4>
+                        <ul>
+                            <li>UEFI boot stub with ARM64/x86_64 support</li>
+                            <li>Serial console output</li>
+                            <li>Framebuffer initialization</li>
+                            <li>Memory map collection</li>
+                        </ul>
+                    </div>
+                    <div class="component">
+                        <h4>Ordo (Kernel)</h4>
+                        <ul>
+                            <li>Main kernel entry point</li>
+                            <li>Subsystem initialization</li>
+                            <li>System call interface</li>
+                        </ul>
+                    </div>
+                    <div class="component">
+                        <h4>Memoria (Memory Management)</h4>
+                        <ul>
+                            <li>Physical memory manager (bitmap allocator)</li>
+                            <li>Virtual memory manager (paging)</li>
+                            <li>Kernel heap allocator</li>
+                        </ul>
+                    </div>
+                    <div class="component">
+                        <h4>Vita (Process Management)</h4>
+                        <ul>
+                            <li>Process management</li>
+                            <li>Thread management</li>
+                            <li>Fair-share scheduler</li>
+                            <li>Power-aware scheduling (ARM64)</li>
+                        </ul>
+                    </div>
+                    <div class="component">
+                        <h4>LumenFS (Filesystem)</h4>
+                        <ul>
+                            <li>Simple, auditable design</li>
+                            <li>4KB block size</li>
+                            <li>Inode-based structure</li>
+                            <li>Custom VFS layer</li>
+                        </ul>
+                    </div>
+                    <div class="component">
+                        <h4>Serenus (Userspace)</h4>
+                        <ul>
+                            <li>Aura: Graphics framework</li>
+                            <li>Ratio: Minimalist shell</li>
+                            <li>System utilities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="features-list">
+                    <div class="feature">
+                        <span class="feature-icon">🏗️</span>
+                        <h3>Multi-Architecture Support</h3>
+                        <p>Built for ARM64 architecture, modern with clean abstraction layers.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🔍</span>
+                        <h3>Auditable Codebase</h3>
+                        <p>Minimal system calls, readable code, and clear design patterns.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">📊</span>
+                        <h3>Advanced Memory Management</h3>
+                        <p>Physical and virtual memory managers with efficient allocation strategies.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">⚡</span>
+                        <h3>Fair-Share Scheduling</h3>
+                        <p>Balanced process scheduling with power-aware optimizations.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🎨</span>
+                        <h3>Calm Design Philosophy</h3>
+                        <p>UI and systems designed for clarity and usability, not complexity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section id="getting-started" class="getting-started">
+            <div class="container">
+                <h2>Getting Started</h2>
+            
+             <h3>Booting</h3>
+              <h3>First, copy the git or manually download AequiOS's latest image</h3>
+              <pre><code>git clone --branch v1.0.0 https://github.com/aequiOS/aequiOS.git </code></pre>
+            </br>
+                <pre><code># Navigate to AequiOS directory
+cd aequios
+
+# Build for ARM64 (default)
+make ARCH=aarch64
+
+# Or build for x86_64
+make ARCH=x86_64</code></pre>
+
+                <h3>Running</h3>
+                <pre><code># Run in QEMU
+# OS hasn't been finialized yet.</code></pre>
+
+                <h3>Project Structure</h3>
+                <pre><code>aequios/
+├── boot/              # Bootloader (Initium)
+├── kernel/            # Kernel (Ordo, Memoria, Vita)
+├── drivers/           # Device drivers
+├── fs/                # Filesystem (LumenFS)
+├── ui/                # Compositor
+├── userspace/         # Userspace programs
+├── docs/              # Documentation
+├── website/           # Website assets
+├── Makefile           # Build system
+└── build.sh           # Build script</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AequiOS Project. Even in Architecture, Design, and Spirit.</p>
+            <p><a href="#contact">Contact</a> | <a href="../docs/ARCHITECTURE.md">Architecture Docs</a> | <strong>Closed-Source</strong></p>
+        </div>
+    </footer>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" style="display:none;">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>For inquiries about AequiOS, licensing, or collaboration:</p>
+            <p>Email: <a href="mailto:arthur.schannel.stop@gmail.com">arthur.schannel.stop@gmail.com</a></p>
+            <p><strong>Note:</strong> AequiOS is closed-source software. Source code access is restricted.</p>
+        </div>
+    </section>
+</body>
+</html>
